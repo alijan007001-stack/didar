@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Studio | Interior Design Portfolio</title>
+  <meta name="description" content="Award-winning interior design studio crafting timeless, sophisticated environments for discerning clients.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function(){
+      if(localStorage.theme==='dark'||(! ('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-text">Atelier</span>
+        <span class="logo-sub">STUDIO</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary header-cta">Book Consultation</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80" alt="Modern interior design" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge animate-on-scroll">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          <span>47 Projects Completed</span>
+        </div>
+        <h1 class="hero-title animate-on-scroll">Transforming Spaces<br>Into Extraordinary<br>Experiences</h1>
+        <p class="hero-desc animate-on-scroll">Award-winning interior design studio crafting timeless, sophisticated environments for discerning clients across residential, commercial, and hospitality sectors.</p>
+        <div class="hero-tags animate-on-scroll">
+          <button class="tag active">Residential <span>(18)</span></button>
+          <button class="tag">Commercial <span>(12)</span></button>
+          <button class="tag">Hospitality <span>(9)</span></button>
+          <button class="tag">Retail <span>(8)</span></button>
+        </div>
+        <div class="hero-cta animate-on-scroll">
+          <a href="#portfolio" class="btn btn-primary">View Portfolio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="#contact" class="btn btn-outline">Book Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="47">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Design Awards</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Our Expertise</span>
+          <h2 class="section-title">Comprehensive Design Services</h2>
+          <p class="section-desc">From concept to completion, we offer a full spectrum of interior design services tailored to elevate every space.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Residential Design</h3>
+            <p>Creating personalized living environments that reflect your lifestyle, taste, and the way you truly live in your home.</p>
+            <a href="#services" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg></a>
+          </div>
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Commercial Design</h3>
+            <p>Designing productive, inspiring workspaces that strengthen your brand identity and enhance employee wellbeing.</p>
+            <a href="#services" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg></a>
+          </div>
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Hospitality Design</h3>
+            <p>Crafting memorable guest experiences through thoughtful spatial design for hotels, restaurants, and boutique venues.</p>
+            <a href="#services" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg></a>
+          </div>
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h3>Color &amp; Material Consulting</h3>
+            <p>Expert guidance on color palettes, finishes, and material selections that create cohesive, harmonious interiors.</p>
+            <a href="#services" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg></a>
+          </div>
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3>Space Planning</h3>
+            <p>Optimizing layouts for functionality and flow, ensuring every square foot serves a purpose while maintaining aesthetic balance.</p>
+            <a href="#services" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg></a>
+          </div>
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Renovation Management</h3>
+            <p>Full-service renovation oversight from demolition to final styling, coordinating contractors and ensuring quality at every stage.</p>
+            <a href="#services" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="9 18 15 12 9 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Our Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">A curated selection of our most transformative design projects across residential and commercial spaces.</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item portfolio-item-tall animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Coral Gables Residence" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Residential</span>
+              <h3>Coral Gables Residence</h3>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-item-wide animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" alt="SoFi Office Complex" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Commercial</span>
+              <h3>SoFi Office Complex</h3>
+            </div>
+          </div>
+          <div class="portfolio-item animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="The Setai Penthouse" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Residential</span>
+              <h3>The Setai Penthouse</h3>
+            </div>
+          </div>
+          <div class="portfolio-item animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d955571c2?w=800&q=80" alt="Mandarin Oriental Suite" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Hospitality</span>
+              <h3>Mandarin Oriental Suite</h3>
+            </div>
+          </div>
+          <div class="portfolio-item animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Wynwood Gallery" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Commercial</span>
+              <h3>Wynwood Gallery</h3>
+            </div>
+          </div>
+          <div class="portfolio-item animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80" alt="Brickell Heights Loft" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="portfolio-cat">Residential</span>
+              <h3>Brickell Heights Loft</h3>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12 animate-on-scroll">
+          <a href="#portfolio" class="btn btn-primary">View All Projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Our Process</span>
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-desc">A collaborative four-step journey from initial vision to final reveal, ensuring every detail reflects your unique story.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step animate-on-scroll">
+            <span class="step-number">01</span>
+            <h3>Consult</h3>
+            <p>We begin with an in-depth conversation to understand your vision, lifestyle, and goals. This discovery phase shapes every decision that follows.</p>
+          </div>
+          <div class="process-step animate-on-scroll">
+            <span class="step-number">02</span>
+            <h3>Design</h3>
+            <p>Our team develops detailed concept boards, floor plans, 3D renderings, and material palettes that bring your vision to life before any work begins.</p>
+          </div>
+          <div class="process-step animate-on-scroll">
+            <span class="step-number">03</span>
+            <h3>Refine</h3>
+            <p>Through iterative reviews and collaborative feedback sessions, we fine-tune every element until the design perfectly captures your aesthetic.</p>
+          </div>
+          <div class="process-step animate-on-scroll">
+            <span class="step-number">04</span>
+            <h3>Execute</h3>
+            <p>We manage the entire implementation process, coordinating with artisans, contractors, and suppliers to deliver a flawless final result.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Client Stories</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-desc">Hear from homeowners and businesses who have experienced the Atelier Studio difference.</p>
+        </div>
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-track">
+            <div class="testimonial-card"><div class="testimonial-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <blockquote>&ldquo;Working with Atelier on our new office was a revelation. The space perfectly balances professionalism with creativity, and our team morale has never been higher. They delivered on time and within budget.&rdquo;</blockquote>
+              <div class="testimonial-author">
+                <strong>Marcus Chen</strong>
+                <span>CEO, TechWave Solutions</span>
+              </div>
+            </div></div>
+            <div class="testimonial-card"><div class="testimonial-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <blockquote>&ldquo;The attention to detail is what sets Atelier apart. They sourced materials from around the world to create a truly one-of-a-kind living space. Our home feels like a luxury resort now.&rdquo;</blockquote>
+              <div class="testimonial-author">
+                <strong>Isabella Martinez</strong>
+                <span>Miami Beach Homeowner</span>
+              </div>
+            </div></div>
+            <div class="testimonial-card"><div class="testimonial-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <blockquote>&ldquo;From concept to completion, the Atelier team was incredibly professional and creative. They reimagined our hotel lobby and the guest feedback has been overwhelmingly positive ever since.&rdquo;</blockquote>
+              <div class="testimonial-author">
+                <strong>Jonathan Wright</strong>
+                <span>GM, The Azure Hotel</span>
+              </div>
+            </div></div>
+            <div class="testimonial-card"><div class="testimonial-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <blockquote>&ldquo;Atelier Studio transformed our dated condo into a breathtaking modern sanctuary. Every detail was considered, from the custom millwork to the curated art collection. They truly understood our vision.&rdquo;</blockquote>
+              <div class="testimonial-author">
+                <strong>Victoria Harrington</strong>
+                <span>Coral Gables Homeowner</span>
+              </div>
+            </div></div>
+            <div class="testimonial-card"><div class="testimonial-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <blockquote>&ldquo;I was nervous about renovating our mid-century home, but Atelier preserved its character while making it completely functional for modern living. The result exceeded every expectation.&rdquo;</blockquote>
+              <div class="testimonial-author">
+                <strong>Diana Rossetti</strong>
+                <span>Coconut Grove Homeowner</span>
+              </div>
+            </div></div>
+            <div class="testimonial-card"><div class="testimonial-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <blockquote>&ldquo;Atelier designed our flagship retail store and the results speak for themselves. Foot traffic increased by 40 percent in the first quarter after the redesign. Truly transformative work.&rdquo;</blockquote>
+              <div class="testimonial-author">
+                <strong>Nathan Park</strong>
+                <span>Founder, Maison Luxe</span>
+              </div>
+            </div></div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn slider-next" id="sliderNext" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards" id="awards">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Recognition</span>
+          <h2 class="section-title">Awards &amp; Accolades</h2>
+          <p class="section-desc">Our commitment to design excellence has been recognized by the industry's most prestigious institutions.</p>
+        </div>
+        <div class="awards-grid">
+          <div class="award-item animate-on-scroll">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h3>Best Residential Design</h3>
+            <p>ASID Design Excellence</p>
+            <span class="award-year">2025</span>
+          </div>
+          <div class="award-item animate-on-scroll">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Hospitality Design Award</h3>
+            <p>HD Awards</p>
+            <span class="award-year">2025</span>
+          </div>
+          <div class="award-item animate-on-scroll">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <h3>Innovation in Commercial Design</h3>
+            <p>IIDA</p>
+            <span class="award-year">2024</span>
+          </div>
+          <div class="award-item animate-on-scroll">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
+            </div>
+            <h3>Emerging Studio of the Year</h3>
+            <p>Architectural Digest</p>
+            <span class="award-year">2024</span>
+          </div>
+          <div class="award-item animate-on-scroll">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Sustainable Design Leader</h3>
+            <p>USGBC</p>
+            <span class="award-year">2023</span>
+          </div>
+          <div class="award-item animate-on-scroll">
+            <div class="award-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3>Top 50 Interior Designers</h3>
+            <p>Luxe Interiors + Design</p>
+            <span class="award-year">2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="pricing">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Common questions about our interior design services and process.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">
+              <span>What is the typical timeline for a residential design project?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Most residential projects take between 3 to 6 months from initial consultation to final installation. This timeline includes the design development phase (4-8 weeks), material sourcing and ordering (4-6 weeks), and implementation (4-8 weeks). Larger or more complex projects may require additional time, which we'll outline clearly in our project proposal.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">
+              <span>How does your pricing structure work?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We offer three pricing tiers: Essential, Premium, and Bespoke. Each tier includes different levels of service, from single-room designs to full-home transformations. We provide transparent pricing with a detailed breakdown during the initial consultation, so you know exactly what to expect.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">
+              <span>Do you work with clients remotely?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we work with clients across the country and internationally. Our digital design process includes virtual consultations, 3D walkthroughs, and detailed specification packages that make remote collaboration seamless. We also coordinate with local contractors in your area for implementation.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">
+              <span>What design styles do you specialize in?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Our team is versatile and experienced across multiple design aesthetics, from modern minimalism and contemporary luxury to transitional, mid-century modern, and classic elegance. We adapt our approach to match your personal style and the architectural character of your space.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">
+              <span>Can you work within my existing budget?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. We believe great design is achievable at various price points. During our initial consultation, we'll discuss your budget openly and create a design plan that maximizes impact within your investment range. We're skilled at blending high-end statement pieces with more accessible options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Get in Touch</span>
+          <h2 class="section-title">Start Your Design Journey</h2>
+          <p class="section-desc">Ready to transform your space? Reach out to schedule a consultation or ask us anything about our services.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form animate-on-scroll" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="residential">Residential Design</option>
+                <option value="commercial">Commercial Design</option>
+                <option value="hospitality">Hospitality Design</option>
+                <option value="color">Color Consulting</option>
+                <option value="space">Space Planning</option>
+                <option value="renovation">Renovation Management</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </form>
+          <div class="contact-info animate-on-scroll">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <a href="tel:5552849103">(555) 284-9103</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:hello@atelierstudio.com">hello@atelierstudio.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Studio</h3>
+                <p>55 Design District<br>Miami, FL 33137</p>
+              </div>
+            </div>
+            <div class="contact-hours">
+              <h3>Studio Hours</h3>
+              <div class="hours-row"><span>Monday - Friday</span><span>9:00 AM - 6:00 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span>10:00 AM - 3:00 PM</span></div>
+              <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="blog">
+      <div class="container cta-content animate-on-scroll">
+        <h2>Ready to Transform Your Space?</h2>
+        <p>Schedule a complimentary consultation and let us bring your vision to life. Every extraordinary space begins with a conversation.</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Book Consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="#portfolio" class="btn btn-outline-light">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <span class="logo-text">Atelier</span>
+            <span class="logo-sub">STUDIO</span>
+          </div>
+          <p>Award-winning interior design studio transforming spaces into extraordinary experiences. Residential, commercial, and hospitality design in Miami.</p>
+          <div class="footer-contact-list">
+            <a href="tel:5552849103"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (555) 284-9103</a>
+            <a href="mailto:hello@atelierstudio.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@atelierstudio.com</a>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 55 Design District, Miami, FL 33137</span>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12a4 4 0 1 1 8 0c0 4-3 6-3 6"/><line x1="12" y1="12" x2="12" y2="21"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Residential Design</a></li>
+            <li><a href="#services">Commercial Design</a></li>
+            <li><a href="#services">Hospitality Design</a></li>
+            <li><a href="#services">Renovation Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Design Blog</a></li>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Atelier Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Cookie Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-outline btn-sm" id="cookieDecline">Decline</button>
+      <button class="btn btn-primary btn-sm" id="cookieAccept">Accept All</button>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
