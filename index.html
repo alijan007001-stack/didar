@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arik — Web Designer & Developer</title>
-  <meta name="description" content="Premium web design, development, and SEO services to help your business stand out.">
+  <title>Murtaza Rezai — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in Flutter, React/Next.js, and Node.js/Laravel. Building production-grade web and mobile applications.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,15 +15,13 @@
   <!-- Header -->
   <header class="header" id="header">
     <div class="header-inner">
-      <a href="#" class="logo">arik.</a>
+      <a href="#" class="logo">murtaza.</a>
       <nav class="nav" id="mainNav">
         <a href="#services" class="nav-link">Services</a>
-        <a href="#work" class="nav-link">Work</a>
+        <a href="#work" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#blog" class="nav-link">Blog</a>
-        <div class="nav-dropdown">
-          <a href="#" class="nav-link nav-link-dropdown">Pages <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M7 10l5 5 5-5z"/></svg></a>
-        </div>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <a href="#contact" class="btn btn-primary btn-sm">Let's talk</a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
@@ -37,11 +35,16 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=900&q=80" alt="3D abstract design" class="hero-img">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80" alt="Technology abstract" class="hero-img">
       </div>
       <div class="container hero-content">
-        <h1 class="hero-title animate-on-scroll">Web Designer<br>& Developer</h1>
-        <p class="hero-desc animate-on-scroll">Premium web design, development, and SEO services to help your business stand out.</p>
+        <h1 class="hero-title animate-on-scroll">Full Stack<br>Developer</h1>
+        <p class="hero-desc animate-on-scroll">Flutter &amp; Web Specialist building production-grade mobile and web applications. Available for freelance &amp; remote opportunities worldwide.</p>
+        <div class="hero-badges animate-on-scroll">
+          <span class="hero-badge">Flutter / Dart</span>
+          <span class="hero-badge">React / Next.js</span>
+          <span class="hero-badge">Node.js / Laravel</span>
+        </div>
         <div class="hero-scroll animate-on-scroll">
           <a href="#services" class="scroll-badge">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
@@ -51,16 +54,26 @@
       </div>
     </section>
 
-    <!-- Logos Section -->
-    <section class="logos">
+    <!-- Stats Section -->
+    <section class="stats">
       <div class="container">
-        <div class="logos-track">
-          <span class="logo-item">Spotify</span>
-          <span class="logo-item">Dropbox</span>
-          <span class="logo-item">Webflow</span>
-          <span class="logo-item">Adobe</span>
-          <span class="logo-item">Mailchimp</span>
-          <span class="logo-item">Figma</span>
+        <div class="stats-grid">
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Production Apps</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Remote Ready</span>
+          </div>
         </div>
       </div>
     </section>
@@ -72,35 +85,41 @@
           <div class="service-card animate-on-scroll">
             <div class="service-header">
               <span class="service-num">01</span>
-              <h3 class="service-title">Web design</h3>
+              <h3 class="service-title">Mobile Development</h3>
             </div>
-            <p class="service-desc">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
-            <a href="#" class="btn-text">
-              <span class="btn-text-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-              <span>About Webdesign</span>
-            </a>
+            <p class="service-desc">Cross-platform mobile apps with Flutter/Dart — featuring REST API integration, offline-first architecture, state management (GetX &amp; Riverpod), and Firebase services.</p>
+            <div class="service-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">GetX</span>
+            </div>
           </div>
           <div class="service-card animate-on-scroll">
             <div class="service-header">
               <span class="service-num">02</span>
-              <h3 class="service-title">Development</h3>
+              <h3 class="service-title">Web Development</h3>
             </div>
-            <p class="service-desc">Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
-            <a href="#" class="btn-text">
-              <span class="btn-text-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-              <span>About Development</span>
-            </a>
+            <p class="service-desc">Full-stack web applications using React/Next.js on the frontend and Node.js/Laravel on the backend. TypeScript-first, responsive UI with Tailwind CSS.</p>
+            <div class="service-tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Laravel</span>
+            </div>
           </div>
           <div class="service-card animate-on-scroll">
             <div class="service-header">
               <span class="service-num">03</span>
-              <h3 class="service-title">Content &amp; SEO</h3>
+              <h3 class="service-title">Backend &amp; DevOps</h3>
             </div>
-            <p class="service-desc">Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.</p>
-            <a href="#" class="btn-text">
-              <span class="btn-text-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
-              <span>About SEO</span>
-            </a>
+            <p class="service-desc">REST API design, database architecture (MongoDB, PostgreSQL, MySQL), authentication systems (JWT, OAuth), real-time with Socket.io, and deployment pipelines.</p>
+            <div class="service-tags">
+              <span class="tag">MongoDB</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">Socket.io</span>
+            </div>
           </div>
         </div>
       </div>
@@ -110,8 +129,8 @@
     <section class="work" id="work">
       <div class="container">
         <div class="section-header-row">
-          <h2 class="section-title-lg animate-on-scroll">Selected Work</h2>
-          <a href="#" class="btn-text animate-on-scroll">
+          <h2 class="section-title-lg animate-on-scroll">Key Projects</h2>
+          <a href="https://murtazarezai.netlify.app" target="_blank" class="btn-text animate-on-scroll">
             <span class="btn-text-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
             <span>See all</span>
           </a>
@@ -119,42 +138,66 @@
         <div class="work-grid">
           <div class="work-item animate-on-scroll">
             <div class="work-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=700&q=80" alt="Space project" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=700&q=80" alt="Tamadon TV" loading="lazy">
               <a href="#" class="work-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
               </a>
             </div>
             <div class="work-info">
-              <h3 class="work-name">Space</h3>
-              <span class="work-cat">Webdesign</span>
+              <h3 class="work-name">Tamadon TV</h3>
+              <span class="work-cat">Flutter &middot; Firebase &middot; HLS</span>
             </div>
+            <p class="work-desc">Video-on-demand platform with live TV broadcast, offline content download, and HLS adaptive streaming.</p>
           </div>
           <div class="work-item animate-on-scroll">
             <div class="work-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=700&q=80" alt="Nova project" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80" alt="React Admin Panel" loading="lazy">
             </div>
             <div class="work-info">
-              <h3 class="work-name">Nova</h3>
-              <span class="work-cat">Webdesign</span>
+              <h3 class="work-name">Enterprise Admin Panel</h3>
+              <span class="work-cat">React &middot; TypeScript &middot; Chart.js</span>
             </div>
+            <p class="work-desc">Full-featured business dashboard with RBAC, real-time data visualization, and multi-tenant analytics.</p>
           </div>
           <div class="work-item animate-on-scroll">
             <div class="work-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1614851099511-773084f6911d?w=700&q=80" alt="Sonic project" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80" alt="Healthy Life" loading="lazy">
             </div>
             <div class="work-info">
-              <h3 class="work-name">Sonic</h3>
-              <span class="work-cat">Webdesign</span>
+              <h3 class="work-name">Healthy Life</h3>
+              <span class="work-cat">Next.js &middot; Socket.io &middot; Prisma</span>
             </div>
+            <p class="work-desc">Telehealth platform with appointment scheduling, real-time video consultations via WebRTC, and patient management.</p>
           </div>
           <div class="work-item animate-on-scroll">
             <div class="work-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=700&q=80" alt="Solar project" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=700&q=80" alt="ClinicFlow" loading="lazy">
             </div>
             <div class="work-info">
-              <h3 class="work-name">Solar</h3>
-              <span class="work-cat">Webdesign</span>
+              <h3 class="work-name">ClinicFlow</h3>
+              <span class="work-cat">React &middot; Node.js &middot; MongoDB</span>
             </div>
+            <p class="work-desc">Hospital management system with billing, patient tracking, doctor scheduling, and multi-role access control.</p>
+          </div>
+          <div class="work-item animate-on-scroll">
+            <div class="work-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80" alt="FlutterFlow Admin" loading="lazy">
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">Admin Suite</h3>
+              <span class="work-cat">Flutter &middot; GetX &middot; Supabase</span>
+            </div>
+            <p class="work-desc">Cross-platform analytics dashboard with user management, real-time KPI tracking, and cloud sync.</p>
+          </div>
+          <div class="work-item animate-on-scroll">
+            <div class="work-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=700&q=80" alt="NewsWave" loading="lazy">
+            </div>
+            <div class="work-info">
+              <h3 class="work-name">NewsWave</h3>
+              <span class="work-cat">Flutter &middot; Riverpod &middot; REST API</span>
+            </div>
+            <p class="work-desc">AI-powered news aggregator with offline reading mode, podcast player, and personalized content feeds.</p>
           </div>
         </div>
       </div>
@@ -164,9 +207,9 @@
     <section class="process" id="process">
       <div class="container">
         <div class="process-intro animate-on-scroll">
-          <span class="process-label">The Process</span>
-          <h2 class="process-title">Your Website<br>in 5 steps</h2>
-          <p class="process-desc">Our process ensures that we create a website tailored to your business needs.</p>
+          <span class="process-label">How I Work</span>
+          <h2 class="process-title">Your Project<br>in 5 steps</h2>
+          <p class="process-desc">A structured process ensuring quality delivery from concept to deployment.</p>
           <div class="process-arrow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
           </div>
@@ -180,9 +223,9 @@
               <div class="step-line"></div>
             </div>
             <div class="step-card">
-              <span class="step-label">Do we Match?</span>
-              <h3 class="step-title">Discovery Call</h3>
-              <p class="step-desc">Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?</p>
+              <span class="step-label">Understanding</span>
+              <h3 class="step-title">Discovery &amp; Requirements</h3>
+              <p class="step-desc">We start with a detailed conversation to understand your goals, target users, and technical requirements. I analyze the scope and propose the best tech stack for your project.</p>
             </div>
           </div>
           <div class="process-step animate-on-scroll">
@@ -192,9 +235,9 @@
               <div class="step-line"></div>
             </div>
             <div class="step-card">
-              <span class="step-label">Planning & Strategy</span>
-              <h3 class="step-title">Concept & Strategy</h3>
-              <p class="step-desc">Together, we develop a strategy that effectively addresses your target audience and goals. Based on the strategy, I create a concept for your website that is not only visually appealing but also functional.</p>
+              <span class="step-label">Architecture</span>
+              <h3 class="step-title">Planning &amp; Design</h3>
+              <p class="step-desc">I design the database schema, API architecture, and UI wireframes. We agree on milestones, deliverables, and timeline before writing a single line of code.</p>
             </div>
           </div>
           <div class="process-step animate-on-scroll">
@@ -204,9 +247,9 @@
               <div class="step-line"></div>
             </div>
             <div class="step-card">
-              <span class="step-label">The Magic</span>
-              <h3 class="step-title">Design & Development</h3>
-              <p class="step-desc">I begin to design and develop your website using Webflow, a powerful no-code tool. I keep you in the loop with regular updates, and you can share feedback along the way.</p>
+              <span class="step-label">Building</span>
+              <h3 class="step-title">Development &amp; Integration</h3>
+              <p class="step-desc">Agile development with regular updates. I build the frontend, backend, and APIs in parallel — integrating Firebase, Supabase, or custom REST endpoints as needed.</p>
             </div>
           </div>
           <div class="process-step animate-on-scroll">
@@ -216,9 +259,9 @@
               <div class="step-line"></div>
             </div>
             <div class="step-card">
-              <span class="step-label">Optimization</span>
-              <h3 class="step-title">Testing & Optimization</h3>
-              <p class="step-desc">I thoroughly test your website and optimize it for all devices & screen sizes. I also optimize performance, SEO and accessibility before launch.</p>
+              <span class="step-label">Quality</span>
+              <h3 class="step-title">Testing &amp; Optimization</h3>
+              <p class="step-desc">Thorough testing across devices and screen sizes. Performance optimization, security audit, SEO, and accessibility checks before any deployment.</p>
             </div>
           </div>
           <div class="process-step animate-on-scroll">
@@ -228,108 +271,85 @@
               <div class="step-line"></div>
             </div>
             <div class="step-card">
-              <span class="step-label">Go Live</span>
-              <h3 class="step-title">Launch & Support</h3>
-              <p class="step-desc">After everything is tested and optimized, we go live. I also offer ongoing support and maintenance to ensure your website continues to perform.</p>
+              <span class="step-label">Delivery</span>
+              <h3 class="step-title">Launch &amp; Support</h3>
+              <p class="step-desc">Deployment to production (Vercel, Netlify, cPanel, VPS, Play Store, App Store) with CI/CD setup. Ongoing maintenance and support post-launch.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- Skills / Tech Stack Section -->
+    <section class="skills" id="skills">
       <div class="container">
         <div class="testimonials-header animate-on-scroll">
-          <h2 class="section-title-xl">What my<br>clients say</h2>
-          <p class="section-desc-center">See what my clients have to say about working with me and the results I helped them achieve.</p>
+          <h2 class="section-title-xl">Tech<br>Stack</h2>
+          <p class="section-desc-center">The tools and technologies I use to build production-grade applications.</p>
         </div>
         <div class="testimonials-grid">
           <div class="testimonials-col">
             <div class="testimonial-card animate-on-scroll">
-              <div class="testimonial-logo">
-                <svg viewBox="0 0 30 20" fill="currentColor" width="30" height="20"><rect width="30" height="20" rx="4" opacity="0.3"/></svg>
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
               </div>
-              <h4 class="testimonial-title">Amazing Results with Arik's Premium Web Design Services.</h4>
-              <p class="testimonial-text">Arik is a top-notch web designer who created a stunning website for my business. He was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend his services.</p>
-              <div class="testimonial-author">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="John Smith" class="testimonial-avatar">
-                <div>
-                  <strong>John Smith</strong>
-                  <span>ABC Company</span>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card animate-on-scroll">
-              <div class="testimonial-logo">
-                <svg viewBox="0 0 120 25" fill="currentColor" width="120" height="25"><rect width="120" height="25" rx="4" opacity="0.3"/></svg>
-              </div>
-              <h4 class="testimonial-title">Exceptional web development and SEO expertise.</h4>
-              <p class="testimonial-text">Arik helped me redesign my website and implement an effective SEO strategy. The results were fantastic - my site's traffic increased significantly. His attention to detail and commitment to quality are outstanding.</p>
-              <div class="testimonial-author">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="Emma Davis" class="testimonial-avatar">
-                <div>
-                  <strong>Emma Davis</strong>
-                  <span>TechCorp Inc.</span>
-                </div>
+              <h4 class="testimonial-title">Mobile Development</h4>
+              <div class="skill-list">
+                <span class="skill-tag">Flutter / Dart</span>
+                <span class="skill-tag">GetX</span>
+                <span class="skill-tag">Riverpod</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">FlutterFlow</span>
+                <span class="skill-tag">REST API Integration</span>
+                <span class="skill-tag">Offline-first Apps</span>
+                <span class="skill-tag">HLS Streaming</span>
               </div>
             </div>
             <div class="testimonial-card animate-on-scroll">
-              <div class="testimonial-logo">
-                <svg viewBox="0 0 50 35" fill="currentColor" width="50" height="35"><rect width="50" height="35" rx="4" opacity="0.3"/></svg>
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M4 7h16M4 17h16M7 12h10"/><circle cx="4" cy="12" r="1"/><circle cx="20" cy="12" r="1"/></svg>
               </div>
-              <h4 class="testimonial-title">Professional, creative and delivers on time.</h4>
-              <p class="testimonial-text">Working with Arik was a great experience. He was professional, creative and delivered the project on time. I would highly recommend him to anyone looking for premium web design services.</p>
-              <div class="testimonial-author">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop" alt="Michael Brown" class="testimonial-avatar">
-                <div>
-                  <strong>Michael Brown</strong>
-                  <span>StartupHub</span>
-                </div>
+              <h4 class="testimonial-title">Database &amp; Backend</h4>
+              <div class="skill-list">
+                <span class="skill-tag">Firebase / Firestore</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Supabase (PostgreSQL)</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Prisma ORM</span>
+                <span class="skill-tag">JWT / OAuth</span>
+                <span class="skill-tag">Socket.io</span>
               </div>
             </div>
           </div>
           <div class="testimonials-col">
             <div class="testimonial-card animate-on-scroll">
-              <div class="testimonial-logo">
-                <svg viewBox="0 0 80 30" fill="currentColor" width="80" height="30"><rect width="80" height="30" rx="4" opacity="0.3"/></svg>
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
               </div>
-              <h4 class="testimonial-title">Outstanding SEO results that transformed our business.</h4>
-              <p class="testimonial-text">Arik's SEO expertise helped us rank on the first page for our key search terms. The increase in organic traffic has been incredible. His strategic approach and clear communication made the process seamless.</p>
-              <div class="testimonial-author">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="Sarah Wilson" class="testimonial-avatar">
-                <div>
-                  <strong>Sarah Wilson</strong>
-                  <span>GreenLeaf Co.</span>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card animate-on-scroll">
-              <div class="testimonial-logo">
-                <svg viewBox="0 0 150 19" fill="currentColor" width="150" height="19"><rect width="150" height="19" rx="4" opacity="0.3"/></svg>
-              </div>
-              <h4 class="testimonial-title">A true partner in bringing our digital vision to life.</h4>
-              <p class="testimonial-text">Arik's ability to understand our brand and translate it into a beautiful, functional website was impressive. He's not just a designer - he's a strategic partner who thinks about the bigger picture.</p>
-              <div class="testimonial-author">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop" alt="David Lee" class="testimonial-avatar">
-                <div>
-                  <strong>David Lee</strong>
-                  <span>DigitalEdge</span>
-                </div>
+              <h4 class="testimonial-title">Web Development</h4>
+              <div class="skill-list">
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Node.js / Express</span>
+                <span class="skill-tag">Laravel (PHP)</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">REST API Design</span>
               </div>
             </div>
             <div class="testimonial-card animate-on-scroll">
-              <div class="testimonial-logo">
-                <svg viewBox="0 0 35 30" fill="currentColor" width="35" height="30"><rect width="35" height="30" rx="4" opacity="0.3"/></svg>
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
               </div>
-              <h4 class="testimonial-title">Elevated our brand with stunning visuals and clean code.</h4>
-              <p class="testimonial-text">From the initial consultation to the final launch, Arik was professional and responsive. The website he built for us is fast, beautiful, and has significantly improved our conversion rates.</p>
-              <div class="testimonial-author">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop" alt="Lisa Chen" class="testimonial-avatar">
-                <div>
-                  <strong>Lisa Chen</strong>
-                  <span>Nova Studios</span>
-                </div>
+              <h4 class="testimonial-title">DevOps &amp; Deployment</h4>
+              <div class="skill-list">
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Netlify / Vercel</span>
+                <span class="skill-tag">cPanel / VPS</span>
+                <span class="skill-tag">CI/CD Pipelines</span>
+                <span class="skill-tag">Windows Server</span>
+                <span class="skill-tag">Active Directory</span>
+                <span class="skill-tag">Network Security</span>
               </div>
             </div>
           </div>
@@ -340,23 +360,37 @@
     <!-- About Section -->
     <section class="about" id="about">
       <div class="about-bg">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80" alt="Arik Andersson" class="about-img">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80" alt="Murtaza Rezai" class="about-img">
         <div class="about-name-marquee">
-          <span>Arik Andersson</span>
-          <span>Arik Andersson</span>
-          <span>Arik Andersson</span>
+          <span>Murtaza Rezai</span>
+          <span>Murtaza Rezai</span>
+          <span>Murtaza Rezai</span>
         </div>
       </div>
       <div class="container about-content">
         <div class="about-grid">
-          <h2 class="about-title animate-on-scroll">A website that leaves<br>a lasting impression!</h2>
+          <h2 class="about-title animate-on-scroll">Building digital<br>solutions that last</h2>
           <div class="about-info animate-on-scroll">
-            <p class="about-desc">Hi, I'm Arik Andersson - a freelancer specializing in premium web design, development, and SEO services. I'm passionate about creating unique and effective solutions for my clients, and I bring a personal touch to every project. Let's work together to bring your vision to life!</p>
+            <p class="about-desc">Full Stack Developer with 2+ years of hands-on experience building production-grade web and mobile applications. Specializing in Flutter, React/Next.js, and Node.js/Laravel. Unique dual background combining software development with IT infrastructure and broadcast media operations. Based in Kabul, available for remote work worldwide.</p>
+            <div class="about-details">
+              <div class="about-detail">
+                <span class="about-detail-label">Education</span>
+                <span class="about-detail-value">BSc Computer Science — Khatam-ul-Nabieen University</span>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-label">Experience</span>
+                <span class="about-detail-value">Full Stack Developer (Freelance) &middot; IT Officer at Tamadon TV</span>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-label">Languages</span>
+                <span class="about-detail-value">Dari (Native) &middot; Pashto (Native) &middot; English (Professional)</span>
+              </div>
+            </div>
             <div class="about-socials">
-              <a href="#" class="social-badge" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 4s-1.2.5-2 .6a4 4 0 00-6.8 3.6A11.1 11.1 0 013 4s-4 9 5 13a11.6 11.6 0 01-7 2c9 5 20 0 20-11.5 0-.3 0-.5 0-.8A8 8 0 0022 4z"/></svg></a>
-              <a href="#" class="social-badge" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
-              <a href="#" class="social-badge" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M19.1 4.9C16.3 9 12 11 7 11.5M4.9 19.1C9 16.3 11 12 11.5 7M12 22c3-5.5 3-11 0-16.5"/></svg></a>
-              <a href="#" class="social-badge" aria-label="Behance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M3 18V6h4.5a3 3 0 010 6H3m0 0h5a3 3 0 010 6H3m12-10h6m-3-2v4M15 14h2a3 3 0 110 4h-2a3 3 0 010-4z"/></svg></a>
+              <a href="mailto:Murtazarezai1000@proton.me" class="social-badge" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></a>
+              <a href="https://wa.me/93744024023" target="_blank" class="social-badge" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+              <a href="https://t.me/MRezai1" target="_blank" class="social-badge" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a>
+              <a href="https://github.com" target="_blank" class="social-badge" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
             </div>
           </div>
         </div>
@@ -368,31 +402,77 @@
       <div class="cta-line"></div>
       <div class="marquee">
         <div class="marquee-track">
+          <span class="marquee-item">+++ Available for hire</span>
           <span class="marquee-item">+++ Let's talk</span>
+          <span class="marquee-item">+++ Available for hire</span>
           <span class="marquee-item">+++ Let's talk</span>
+          <span class="marquee-item">+++ Available for hire</span>
           <span class="marquee-item">+++ Let's talk</span>
+          <span class="marquee-item">+++ Available for hire</span>
           <span class="marquee-item">+++ Let's talk</span>
+          <span class="marquee-item">+++ Available for hire</span>
           <span class="marquee-item">+++ Let's talk</span>
-          <span class="marquee-item">+++ Let's talk</span>
-          <span class="marquee-item">+++ Let's talk</span>
-          <span class="marquee-item">+++ Let's talk</span>
-          <span class="marquee-item">+++ Let's talk</span>
-          <span class="marquee-item">+++ Let's talk</span>
-          <span class="marquee-item">+++ Let's talk</span>
+          <span class="marquee-item">+++ Available for hire</span>
           <span class="marquee-item">+++ Let's talk</span>
         </div>
       </div>
       <div class="cta-line"></div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Contact Section -->
     <section class="cta" id="contact">
       <div class="container">
         <div class="cta-content animate-on-scroll">
           <span class="cta-label">Project in mind?</span>
-          <h2 class="cta-title">Let's make your<br>Website shine</h2>
-          <p class="cta-desc">Premium web design, webflow, and SEO services to help your business stand out.</p>
-          <a href="mailto:hello@arik.com" class="btn btn-primary">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          <h2 class="cta-title">Let's build<br>something great</h2>
+          <p class="cta-desc">I'm available for freelance and remote work. Let's discuss your project.</p>
+        </div>
+        <div class="contact-grid animate-on-scroll">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:Murtazarezai1000@proton.me">Murtazarezai1000@proton.me</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+93744024023">+93 744 024 023</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <strong>Location</strong>
+                <span>Kabul, Afghanistan &middot; Remote Worldwide</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span>
+              <div>
+                <strong>Website</strong>
+                <a href="https://murtazarezai.netlify.app" target="_blank">murtazarezai.netlify.app</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -404,46 +484,47 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <a href="#" class="logo">arik.</a>
+          <a href="#" class="logo">murtaza.</a>
+          <p class="footer-desc">Full Stack Developer specializing in Flutter, React/Next.js, and Node.js. Building production-grade apps from Kabul for clients worldwide.</p>
           <div class="footer-socials">
-            <a href="#" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></span> Instagram</a>
-            <a href="#" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M22 4s-1.2.5-2 .6a4 4 0 00-6.8 3.6A11.1 11.1 0 013 4s-4 9 5 13a11.6 11.6 0 01-7 2c9 5 20 0 20-11.5 0-.3 0-.5 0-.8A8 8 0 0022 4z"/></svg></span> Twitter</a>
-            <a href="#" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M19.1 4.9C16.3 9 12 11 7 11.5M4.9 19.1C9 16.3 11 12 11.5 7M12 22c3-5.5 3-11 0-16.5"/></svg></span> Dribbble</a>
-            <a href="#" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 18V6h4.5a3 3 0 010 6H3m0 0h5a3 3 0 010 6H3m12-10h6m-3-2v4M15 14h2a3 3 0 110 4h-2a3 3 0 010-4z"/></svg></span> Behance</a>
+            <a href="mailto:Murtazarezai1000@proton.me" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></span> Email</a>
+            <a href="https://wa.me/93744024023" target="_blank" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span> WhatsApp</a>
+            <a href="https://t.me/MRezai1" target="_blank" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></span> Telegram</a>
+            <a href="https://github.com" target="_blank" class="footer-social-link"><span class="social-badge-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></span> GitHub</a>
           </div>
         </div>
         <div class="footer-col">
-          <h4 class="footer-heading">Pages</h4>
+          <h4 class="footer-heading">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#work">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4 class="footer-heading">CMS</h4>
+          <h4 class="footer-heading">Services</h4>
           <ul class="footer-links">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#">Work Single</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#">Blog Post</a></li>
+            <li><a href="#services">Flutter Development</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Backend & APIs</a></li>
+            <li><a href="#services">DevOps & Deployment</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4 class="footer-heading">Utility Pages</h4>
+          <h4 class="footer-heading">Connect</h4>
           <ul class="footer-links">
-            <li><a href="#">404 Error Page</a></li>
-            <li><a href="#">Password Protected</a></li>
-            <li><a href="#">Styleguide</a></li>
-            <li><a href="#">Changelog</a></li>
-            <li><a href="#">Licenses</a></li>
+            <li><a href="mailto:Murtazarezai1000@proton.me">Murtazarezai1000@proton.me</a></li>
+            <li><a href="tel:+93744024023">+93 744 024 023</a></li>
+            <li><a href="https://murtazarezai.netlify.app" target="_blank">murtazarezai.netlify.app</a></li>
+            <li><a href="https://t.me/MRezai1" target="_blank">Telegram: @MRezai1</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; Designed by <a href="#">Flavor Studio</a></p>
-        <p>Powered by <a href="#">Webflow</a></p>
+        <p>&copy; 2024 Murtaza Rezai. All rights reserved.</p>
+        <p>Kabul, Afghanistan &middot; Remote Worldwide</p>
       </div>
     </div>
   </footer>
