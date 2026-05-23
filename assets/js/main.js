@@ -107,10 +107,63 @@
     card.style.transitionDelay = (i * 0.1) + 's';
   });
 
-  // Staggered animation for work items
-  var workItems = document.querySelectorAll('.work-item');
-  workItems.forEach(function (item, i) {
-    item.style.transitionDelay = (i * 0.1) + 's';
+  // Project Gallery Slideshow
+  document.querySelectorAll('.project-gallery').forEach(function (gallery) {
+    var slides = gallery.querySelectorAll('.project-slide');
+    var dotsContainer = gallery.querySelector('.project-dots');
+    var prevBtn = gallery.querySelector('.project-prev');
+    var nextBtn = gallery.querySelector('.project-next');
+    var counterCurrent = gallery.querySelector('.counter-current');
+    var currentIndex = 0;
+
+    // Create dots
+    slides.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.className = 'project-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+      dot.addEventListener('click', function () { goToSlide(i); });
+      dotsContainer.appendChild(dot);
+    });
+
+    var dots = dotsContainer.querySelectorAll('.project-dot');
+
+    function goToSlide(index) {
+      slides[currentIndex].classList.remove('active');
+      dots[currentIndex].classList.remove('active');
+      currentIndex = index;
+      slides[currentIndex].classList.add('active');
+      dots[currentIndex].classList.add('active');
+      if (counterCurrent) counterCurrent.textContent = currentIndex + 1;
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        goToSlide(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        goToSlide(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+      });
+    }
+
+    // Auto-advance every 5 seconds
+    var autoTimer = setInterval(function () {
+      goToSlide(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+    }, 5000);
+
+    gallery.addEventListener('mouseenter', function () { clearInterval(autoTimer); });
+    gallery.addEventListener('mouseleave', function () {
+      autoTimer = setInterval(function () {
+        goToSlide(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+      }, 5000);
+    });
+  });
+
+  // Staggered animation for project showcases
+  var showcases = document.querySelectorAll('.project-showcase');
+  showcases.forEach(function (item, i) {
+    item.style.transitionDelay = (i * 0.15) + 's';
   });
 
   // Staggered animation for process steps
@@ -149,6 +202,38 @@
       window.location.href = 'mailto:Murtazarezai1000@proton.me?subject=' + subject + '&body=' + body;
     });
   }
+
+  // Lightbox for project images
+  var lightbox = document.createElement('div');
+  lightbox.className = 'lightbox-overlay';
+  lightbox.innerHTML = '<button class="lightbox-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M18 6L6 18M6 6l12 12"/></svg></button><img src="" alt="">';
+  document.body.appendChild(lightbox);
+
+  var lightboxImg = lightbox.querySelector('img');
+  var lightboxClose = lightbox.querySelector('.lightbox-close');
+
+  document.querySelectorAll('.project-slide').forEach(function (slide) {
+    slide.style.cursor = 'zoom-in';
+    slide.addEventListener('click', function () {
+      lightboxImg.src = this.src;
+      lightboxImg.alt = this.alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+  });
 
   // Cursor glow effect (subtle)
   var glow = document.createElement('div');
