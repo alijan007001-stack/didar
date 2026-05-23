@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murtaza Rezai — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in Flutter, React/Next.js, and Node.js/Laravel. Building production-grade web and mobile applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">murtaza<span class="logo-dot">.</span></a>
+      <nav class="nav" id="mainNav">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary btn-sm">Let's talk</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <p class="hero-name anim">Murtaza Rezai</p>
+        <h1 class="hero-title anim">Full Stack<br>Developer</h1>
+        <p class="hero-desc anim">Flutter &amp; Web Specialist building production-grade mobile and web applications. Available for freelance &amp; remote opportunities worldwide.</p>
+        <div class="hero-badges anim">
+          <span class="hero-badge">Flutter / Dart</span>
+          <span class="hero-badge">React / Next.js</span>
+          <span class="hero-badge">Node.js / Laravel</span>
+        </div>
+        <a href="#services" class="btn btn-primary hero-cta anim">My Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item anim">
+            <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Production Apps</span>
+          </div>
+          <div class="stat-item anim">
+            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item anim">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item anim">
+            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Remote Ready</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header anim">
+          <span class="section-tag">What I Do</span>
+          <h2 class="section-title">Services</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card anim">
+            <span class="service-num">01</span>
+            <h3 class="service-title">Mobile Development</h3>
+            <p class="service-desc">Cross-platform mobile apps with Flutter/Dart — featuring REST API integration, offline-first architecture, state management (GetX &amp; Riverpod), and Firebase services.</p>
+            <div class="service-tags">
+              <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span><span class="tag">GetX</span>
+            </div>
+          </div>
+          <div class="service-card anim">
+            <span class="service-num">02</span>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">Full-stack web applications using React/Next.js on the frontend and Node.js/Laravel on the backend. TypeScript-first, responsive UI with Tailwind CSS.</p>
+            <div class="service-tags">
+              <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">Laravel</span>
+            </div>
+          </div>
+          <div class="service-card anim">
+            <span class="service-num">03</span>
+            <h3 class="service-title">Backend &amp; DevOps</h3>
+            <p class="service-desc">REST API design, database architecture (MongoDB, PostgreSQL, MySQL), authentication systems (JWT, OAuth), real-time with Socket.io, and deployment pipelines.</p>
+            <div class="service-tags">
+              <span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Prisma</span><span class="tag">Socket.io</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects" id="work">
+      <div class="container">
+        <div class="section-header anim">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <!-- Project 1: Hotel -->
+        <div class="project-showcase anim">
+          <div class="project-gallery" data-project="hotel">
+            <div class="project-slides">
+              <img src="assets/img/projects/hotel-mockup.png" alt="Hotel — Mockup" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/hotel-fa-hero.png" alt="Hotel — Persian Hero" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/hotel-en-hero.png" alt="Hotel — English Hero" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/hotel-fa-rooms.png" alt="Hotel — Rooms" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/hotel-admin-dashboard.png" alt="Hotel — Dashboard" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/hotel-admin-reports.png" alt="Hotel — Reports" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/hotel-admin-users.png" alt="Hotel — Users" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Full Stack</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">7</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">5-Star Hotel Management System</h3>
+            <p class="project-description">Complete hotel booking and management system with bilingual (FA/EN) public website, admin dashboard with real-time analytics, room management, reservation system, payment tracking, and financial reporting.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Bilingual (Dari/English)</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Admin Panel + Reports</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Role-based Access (RBAC)</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Financial &amp; Daily Reports</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">HTML / CSS / JS</span><span class="tag">PHP / Laravel</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span><span class="tag">Chart.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ATI -->
+        <div class="project-showcase project-showcase--reverse anim">
+          <div class="project-gallery" data-project="ati">
+            <div class="project-slides">
+              <img src="assets/img/projects/ati-homepage.png" alt="ATI — Homepage" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/ati-home.png" alt="ATI — Home Detail" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/ati-about.png" alt="ATI — About Page" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/ati-department.png" alt="ATI — Departments" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/ati-registration.png" alt="ATI — Registration" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/ati-contact.png" alt="ATI — Contact" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Web Design</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">6</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">Afghan Institute of Technology</h3>
+            <p class="project-description">Professional multi-page educational institution website with RTL Persian layout, department pages, online registration system with multi-step forms, exam results portal, gallery, and Google Maps integration.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>RTL Persian Layout</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Multi-step Registration</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Department System</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Newsletter &amp; Contact Forms</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">HTML / CSS / JS</span><span class="tag">Tailwind CSS</span><span class="tag">Base44</span><span class="tag">Responsive</span><span class="tag">Google Maps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Maktab Tamadan -->
+        <div class="project-showcase project-showcase--app anim">
+          <div class="project-gallery project-gallery--app" data-project="maktab">
+            <div class="project-slides">
+              <img src="assets/img/projects/maktab-tamadan-1.jpg" alt="Maktab Tamadan — App Overview" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/maktab-tamadan-2.jpg" alt="Maktab Tamadan — App Screens" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Mobile App</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">2</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">Maktab Tamadan — Education App</h3>
+            <p class="project-description">Flutter-based education platform for Afghanistan with video lessons, PDF textbooks, challenges &amp; quizzes, student profiles with progress tracking, and dark-themed UI.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Video Lessons &amp; PDF Books</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Student Progress Tracking</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Challenges &amp; Quizzes</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Cross-platform (Android/iOS)</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span><span class="tag">GetX</span><span class="tag">Video Player</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Tamadon TV App -->
+        <div class="project-showcase anim">
+          <div class="project-gallery" data-project="tamadon-app">
+            <div class="project-slides">
+              <img src="assets/img/projects/tamadon-app-1.jpg" alt="Tamadon TV — App Screens" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/tamadon-app-2.jpg" alt="Tamadon TV — Phone" class="project-slide" loading="lazy">
+              <img src="assets/img/projects/tamadon-app-3.jpg" alt="Tamadon TV — In-Hand" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Mobile App</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">3</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">Tamadon TV — Streaming App</h3>
+            <p class="project-description">Video-on-demand platform with live TV broadcast, offline content download, HLS adaptive streaming, user profiles, categories, and social media integration.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Live TV &amp; VOD Streaming</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Offline Download</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>HLS Adaptive Streaming</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>User Profiles &amp; Categories</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span><span class="tag">HLS</span><span class="tag">Video Player</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Tamadon Admin -->
+        <div class="project-showcase project-showcase--reverse anim">
+          <div class="project-gallery" data-project="tamadon-admin">
+            <div class="project-slides">
+              <img src="assets/img/projects/tamadon-admin-1.jpg" alt="Tamadon Admin — Light &amp; Dark" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/tamadon-admin-2.jpg" alt="Tamadon Admin — Dashboard" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Full Stack</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">2</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">Tamadon TV — Admin Panel</h3>
+            <p class="project-description">RTL admin dashboard with light/dark mode, real-time analytics, weekly visit charts, service health monitoring, news management, and user administration.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Light/Dark Mode</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Real-time Analytics</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>API Health Monitoring</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>RTL Persian Dashboard</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Chart.js</span><span class="tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Khatam Hospital -->
+        <div class="project-showcase anim">
+          <div class="project-gallery" data-project="khatam">
+            <div class="project-slides">
+              <img src="assets/img/projects/khatam-hospital-1.jpg" alt="Khatam Hospital — MacBook" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/khatam-hospital-2.jpg" alt="Khatam Hospital — Café" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Full Stack</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">2</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">Khatam Hospital — HMS</h3>
+            <p class="project-description">Complete hospital management system with 50+ expert doctors, 10K+ patients. Department management, doctor profiles, patient registration, appointment scheduling, and emergency services.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>50+ Doctors Directory</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Patient Registration</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Department Management</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>24/7 Emergency Portal</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: TamPrompter -->
+        <div class="project-showcase project-showcase--reverse anim">
+          <div class="project-gallery" data-project="tamprompter">
+            <div class="project-slides">
+              <img src="assets/img/projects/tamprompter-1.png" alt="TamPrompter — Dual Laptop" class="project-slide active" loading="lazy">
+              <img src="assets/img/projects/tamprompter-2.png" alt="TamPrompter — Editor" class="project-slide" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Desktop App</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">2</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">TamPrompter — Teleprompter</h3>
+            <p class="project-description">Professional desktop teleprompter application for broadcast studio. Rich text editor, adjustable scroll speed, font customization, fullscreen presentation, and real-time mirroring.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Rich Text Editor</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Adjustable Speed Control</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Fullscreen Presentation</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Live TV Broadcast Use</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">C#</span><span class="tag">.NET / WPF</span><span class="tag">XAML</span><span class="tag">Desktop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Healthy Life -->
+        <div class="project-showcase anim">
+          <div class="project-gallery" data-project="healthy-life">
+            <div class="project-slides">
+              <img src="assets/img/projects/healthy-life-1.jpg" alt="Healthy Life — Dashboard" class="project-slide active" loading="lazy">
+            </div>
+            <div class="project-nav">
+              <button class="project-arrow project-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+              <div class="project-dots"></div>
+              <button class="project-arrow project-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+            </div>
+            <span class="project-type-badge">Web App</span>
+            <span class="project-counter"><span class="counter-current">1</span> / <span class="counter-total">1</span></span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-status">Production</span>
+            </div>
+            <h3 class="project-title">Healthy Life — Smart Diet Planner</h3>
+            <p class="project-description">Intelligent health dashboard with calorie tracking, meal planning, nutrition analysis, weekly progress reports, and personalized diet recommendations with RTL Persian interface.</p>
+            <div class="project-highlights">
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Calorie &amp; Nutrition Tracking</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Smart Diet Recommendations</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>Weekly Progress Reports</span></div>
+              <div class="highlight-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20 6L9 17l-5-5"/></svg><span>RTL Persian Interface</span></div>
+            </div>
+            <div class="project-stack">
+              <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Chart.js</span><span class="tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-projects anim">
+          <a href="https://murtazarezai.netlify.app" target="_blank" class="btn btn-primary">View All Projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header anim">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card anim">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><rect x="5" y="2" width="14" height="20" rx="3"/><circle cx="12" cy="18" r="1"/></svg></div>
+            <h4 class="skill-title">Mobile Development</h4>
+            <div class="skill-tags">
+              <span class="tag">Flutter / Dart</span><span class="tag">GetX</span><span class="tag">Riverpod</span><span class="tag">Firebase</span><span class="tag">FlutterFlow</span><span class="tag">REST API Integration</span><span class="tag">Offline-first Apps</span><span class="tag">HLS Streaming</span>
+            </div>
+          </div>
+          <div class="skill-card anim">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M22 12A10 10 0 0012 2v10z"/><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg></div>
+            <h4 class="skill-title">Database &amp; Backend</h4>
+            <div class="skill-tags">
+              <span class="tag">Firebase / Firestore</span><span class="tag">MongoDB</span><span class="tag">Supabase (PostgreSQL)</span><span class="tag">MySQL</span><span class="tag">Prisma ORM</span><span class="tag">JWT / OAuth</span><span class="tag">Socket.io</span>
+            </div>
+          </div>
+          <div class="skill-card anim">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h4 class="skill-title">Web Development</h4>
+            <div class="skill-tags">
+              <span class="tag">React.js</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Node.js / Express</span><span class="tag">Laravel (PHP)</span><span class="tag">Tailwind CSS</span><span class="tag">REST API Design</span>
+            </div>
+          </div>
+          <div class="skill-card anim">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h4 class="skill-title">DevOps &amp; Deployment</h4>
+            <div class="skill-tags">
+              <span class="tag">Git / GitHub</span><span class="tag">Netlify / Vercel</span><span class="tag">cPanel / VPS</span><span class="tag">CI/CD Pipelines</span><span class="tag">Windows Server</span><span class="tag">Active Directory</span><span class="tag">Network Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left anim">
+            <h2 class="about-title">Building digital<br>solutions that last</h2>
+            <div class="about-photo-wrapper">
+              <img src="assets/img/profile/murtaza-rezai.jpg" alt="Murtaza Rezai" class="about-photo">
+            </div>
+            <div class="about-logo-wrapper">
+              <img src="assets/img/profile/murtaza-logo.jpg" alt="M Rezai — Brand Logo" class="about-logo">
+            </div>
+          </div>
+          <div class="about-info anim">
+            <p class="about-desc">Full Stack Developer with 2+ years of hands-on experience building production-grade web and mobile applications. Specializing in Flutter, React/Next.js, and Node.js/Laravel. Unique dual background combining software development with IT infrastructure and broadcast media operations. Based in Kabul, available for remote work worldwide.</p>
+            <div class="about-details">
+              <div class="about-detail">
+                <span class="about-detail-label">Education</span>
+                <span class="about-detail-value">BSc Computer Science — Khatam-ul-Nabieen University</span>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-label">Experience</span>
+                <span class="about-detail-value">Full Stack Developer (Freelance) &middot; IT Officer at Tamadon TV</span>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-label">Languages</span>
+                <span class="about-detail-value">Dari (Native) &middot; Pashto (Native) &middot; English (Professional)</span>
+              </div>
+            </div>
+            <div class="about-socials">
+              <a href="mailto:Murtazarezai1000@proton.me" class="social-badge" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg></a>
+              <a href="https://wa.me/93744024023" target="_blank" class="social-badge" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+              <a href="https://t.me/MRezai1" target="_blank" class="social-badge" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></a>
+              <a href="https://github.com" target="_blank" class="social-badge" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-header anim">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's build<br>something great</h2>
+          <p class="contact-desc">I'm available for freelance and remote work. Let's discuss your project.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form anim" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+          </form>
+          <div class="contact-info anim">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:Murtazarezai1000@proton.me">Murtazarezai1000@proton.me</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+93744024023">+93 744 024 023</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span class="contact-label">Location</span>
+                <span>Kabul, Afghanistan &middot; Remote Worldwide</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <div>
+                <span class="contact-label">Website</span>
+                <a href="https://murtazarezai.netlify.app" target="_blank">murtazarezai.netlify.app</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">murtaza<span class="logo-dot">.</span></a>
+          <p class="footer-desc">Full Stack Developer specializing in Flutter, React/Next.js, and Node.js. Building production-grade apps from Kabul for clients worldwide.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#work">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:Murtazarezai1000@proton.me">Murtazarezai1000@proton.me</a></li>
+              <li><a href="tel:+93744024023">+93 744 024 023</a></li>
+              <li><a href="https://murtazarezai.netlify.app" target="_blank">murtazarezai.netlify.app</a></li>
+              <li><a href="https://t.me/MRezai1" target="_blank">Telegram: @MRezai1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Murtaza Rezai. All rights reserved.</span>
+        <span>Kabul, Afghanistan &middot; Remote Worldwide</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="Full size" class="lightbox-img">
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
